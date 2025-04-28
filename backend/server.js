@@ -10,10 +10,11 @@ connectDB();
 const app = express();
 
 app.use(cors({
-  origin: 'http://localhost:5173',  // Adjust the URL for your frontend
+  origin: 'https://passwordmanager-1g7a.railway.app',  // Adjust to your frontend URL
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));
+
 
 app.use(express.json());
 
