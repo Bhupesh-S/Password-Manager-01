@@ -1,0 +1,63 @@
+/* Contact Page Styles */
+.contact {
+    background-color: #f8f9fa;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contact p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form .form-label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .contact-form .form-control {
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-form .form-control:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.2);
+  }
+  
+  .contact-form button {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .contact-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .contact-form {
+      padding: 20px;
+    }
+  }
+  

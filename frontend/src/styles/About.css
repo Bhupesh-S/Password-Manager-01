@@ -1,0 +1,82 @@
+/* About Page Styles */
+.about {
+    background-color: #f8f9fa;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .mission, .featuress, .team {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-basis: 30%;
+    margin-bottom: 30px;
+  }
+  
+  .mission h3, .featuress h3, .team h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .mission p, .featuress ul, .team p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .featuress ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .featuress li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .featuress li::before {
+    content: '\2022';
+    color: #4CAF50;
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  
+  .about .team p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .mission, .features, .team {
+      flex-basis: 80%;
+    }
+  }
+  
