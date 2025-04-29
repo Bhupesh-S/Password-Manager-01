@@ -1,3 +1,4 @@
+import.meta.env.VITE_BACKEND_URL
 import React, { useState } from 'react';
 import '../styles/Login.css';
 import { useNavigate, Link } from 'react-router-dom';
@@ -13,7 +14,7 @@ const Login = () => {
     e.preventDefault();
     setLoading(true);
 
-    fetch('http://localhost:5000/api/auth/login', {
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/api/auth/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password }),
