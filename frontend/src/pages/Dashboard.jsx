@@ -1,3 +1,4 @@
+import.meta.env.VITE_BACKEND_URL
 import React, { useState, useEffect } from 'react';
 import '../styles/Dashboard.css';
 import { FiCopy, FiEye, FiEyeOff } from 'react-icons/fi';
@@ -22,7 +23,7 @@ const Dashboard = () => {
     }
     setIsLoading(true);
     console.log('Sending token:', token); // Debug token
-    fetch('http://localhost:5000/api/passwords/all', {
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/api/passwords/all`, {
       headers: {
         Authorization: `Bearer ${token}`, // Fixed syntax
       },
