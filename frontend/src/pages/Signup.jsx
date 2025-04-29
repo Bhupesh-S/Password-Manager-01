@@ -1,3 +1,5 @@
+import.meta.env.VITE_BACKEND_URL
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; 
 import '../styles/Signup.css';
@@ -16,7 +18,7 @@ const Signup = () => {
       return;
     }
 
-    fetch('http://localhost:5000/api/auth/signup', {
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/api/auth/signup`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password })
