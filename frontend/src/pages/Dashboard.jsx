@@ -59,7 +59,7 @@ const Dashboard = () => {
       return;
     }
     setIsLoading(true);
-    fetch('http://localhost:5000/api/passwords/add', {
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/api/passwords/add`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
